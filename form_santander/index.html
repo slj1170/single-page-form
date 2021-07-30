@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<script src="assets/js/scripts.js"></script>
+	
+    <title>Formulario</title>
+</head>
+<body>
+
+	<div class="login-reg-panel">							
+		<div class="register-info-box">
+			<img src="assets/img/logo-blanco-1.png" alt="Universidad de Montemorelos">
+		</div>
+							
+	</div>
+			<div class="white-panel card">
+					<h5 class="card-header info-color white-text text-center py-4">
+						<strong>Formulario SANTANDER</strong>
+					</h5>
+	
+				<div class="card-body px-lg-5 pt-4">
+				
+					<!-- Form -->
+					<form class="text-center validacion" style="color: #757575;" action="assets/php/datos.php" method="POST" novalidate>
+				
+						<div class="form-row md-form">
+							<div class="col">
+								<!-- Apellido P -->
+								<div class="form-group">
+									<input type="text" id="apellidoP" class="form-control" placeholder="Apellido P" name="apellidoP" required>
+								</div>
+							</div>
+						  <div class="col">
+								<!-- Apellido M -->
+								<div class="md-form">
+									<input type="text" id="apellidoM" class="form-control" placeholder="Apellido M" name="apellidoM" required>
+								</div>
+							</div>
+							<div class="col">
+								<!-- Nombre -->
+								<div class="md-form">
+									<input type="text" id="nombre" class="form-control" placeholder="Nombre" name="nombre" required>
+								</div>
+							</div>
+						</div>
+				
+						<!-- Sexo -->
+						<div class="md-form mb-3 form-inline">
+							<select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="sexo" name="sexo" required>
+							  <option selected value="">-- Sexo --</option>
+							  <option value="M">Masculino</option>
+							  <option value="F">Femenino</option>
+							</select>
+						</div>
+						
+						<!-- Fecha nacimiento -->
+						<div class="md-form">
+							<label for="materialRegisterFormEmail">Fecha de nacimiento</label>
+							<input type="date" class="form-control" name="fecha_nac" required>
+						</div>
+	
+						<!-- RFC -->
+						<div class="md-form my-3">
+							<input type="text" maxlength="30" class="form-control" placeholder="RFC" name="rfc" required>
+						</div>
+	
+						<!-- Matricula -->
+						<div class="md-form mt-3">
+							<input type="number" id="matricula" maxlength="15" data-bind="value:matricula" class="form-control" placeholder="Matricula" name="matricula" required>
+						</div>
+						
+						<div class="form-row">
+							<div class="col">
+								<!-- Codigo pais -->
+								<div class="md-form my-3">
+									<input type="tel" id="codigoPais" min="0" maxlength="3" step="1" data-bind="value:codigoPais" class="form-control" placeholder="Codigo pais (ej: 52)" name="cod_pais" required>
+								</div>
+							</div>
+						  <div class="col">
+								<!-- Telefono -->
+								<div class="md-form my-3">
+									<input type="tel" id="tele" min="0" step="1" data-bind="value:tele" class="form-control" placeholder="Telefono" name="tel" required>
+								</div>
+							</div>
+						</div>
+				
+						<!-- E-mail -->
+						<div class="md-form mt-0">
+							<input type="email" id="email" class="form-control" placeholder="E-mail" name="email" required>
+						</div>
+						
+						<div class="form-row">
+							<div class="col">
+								<!-- Calle -->
+								<div class="md-form my-3">
+									<input type="text" id="calle" data-bind="value:calle" class="form-control" placeholder="Calle" name="calle" required>
+								</div>
+							</div>
+						  <div class="col">
+								<!-- Num de via -->
+								<div class="md-form my-3">
+									<input type="text" id="numVia" data-bind="value:numVia" class="form-control" placeholder="N°  de via" name="num_via" required>
+								</div>
+							</div>
+							<div class="col">
+								<!-- Interior -->
+								<div class="md-form my-3">
+									<input type="number" id="interior" min="0" step="1" data-bind="value:interior" class="form-control" placeholder="Interior" name="interior" required>
+								</div>
+							</div>
+						  <div class="col">
+								<!-- Colonia -->
+								<div class="md-form my-3">
+									<input type="text" id="colonia" data-bind="value:colonia" class="form-control" placeholder="Colonia" name="colonia" required>
+								</div>
+							</div>
+						</div>
+	
+						<!-- Cod postal -->
+						<div class="md-form mb-3">
+							<input type="number" id="codPostal" min="0" step="1" data-bind="value:codPostal" class="form-control" placeholder="Codigo Postal" name="cod_post" required>
+						</div>
+	
+						<!-- Nacionalidad -->
+						<div class="md-form my-3">
+							<input type="text" id="nacionalidad" data-bind="value:nacionalidad" class="form-control" placeholder="Nacionalidad" name="nacionalidad" required>
+						</div>					
+						
+						<hr>
+						
+						<!-- Registrar button -->
+						<div class="md-form my-3">
+							<button class="btn btn-outline-info btn-rounded txt-center waves-effect waves-light z-depth-0" type="submit" name="guardarUsuario">REGISTRAR</button>						
+						</div>
+	
+					</form>
+					<!-- Form -->
+				
+				</div>
+				
+			</div>
+
+ 
+</body>
+</html>
